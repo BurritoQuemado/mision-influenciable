@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { Popover, Transition } from '@headlessui/react'
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/logo.webp'
+import Logo2 from '../../assets/images/logo2.webp'
 import {
   Bars3Icon,
   XMarkIcon,
@@ -13,19 +14,6 @@ const navigation = [
       name: 'Inicio', 
       href: '/'
     },
-    {
-      name: 'Galería', 
-      href: '/galeria'
-    },
-]
-
-const navigation_logged = [
-
-    {
-      name: "Cartera Crytomonedas",
-      href: '/cartera-desc',
-      target: '_self'
-    }
 ]
 
 const footerNavigation = {
@@ -46,7 +34,7 @@ class Layout extends Component{
       <div className="bg-white">
         <div className="relative overflow-hidden">
           <Popover as="header" className="relative">
-            <div className="bg-gray-300 pt-6 pb-0">
+            <div className="bg-principal pt-4 pb-0">
               <nav
                 className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
                 aria-label="Global"
@@ -56,9 +44,9 @@ class Layout extends Component{
                     <Link to="/">
                       <span className="sr-only">Wallet Cryptocoins</span>
                       <img
-                        className="h-10 w-auto lg:h-16"
+                        className="h-10 w-auto lg:h-32"
                         src={Logo}
-                        alt="logo-viajespalacio"
+                        alt="logo"
                       />
                     </Link>
                     <div className="-mr-2 flex items-center md:hidden">
@@ -78,20 +66,6 @@ class Layout extends Component{
                         {item.name}
                       </Link>
                     ))}
-                    {
-                      logged ? (navigation_logged.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          target={item.target}
-                          rel="nonreferrer noreferrer"
-                          className="text-base font-medium text-black hover:text-gray-600"
-                        >
-                          {item.name}
-                        </Link>
-                      )))
-                      : null
-                    }
                   </div>
                 </div>
                 <div className="hidden md:flex md:items-center md:space-x-6">
@@ -159,20 +133,6 @@ class Layout extends Component{
                           {item.name}
                         </Link>
                       ))}
-                      {
-                        logged ? navigation_logged.map((item) => (
-                          <Link
-                            key={item.name}
-                            to={item.href}
-                            target={item.target}
-                            rel="nonreferrer noreferrer"
-                            className="block rounded-md px-3 py-2 text-base font-medium text-black"
-                          >
-                            {item.name}
-                          </Link>
-                        ))
-                        : null
-                      }
                     </div>
                     { logged ? <div className="mt-6 px-5">
                       <Link
@@ -219,7 +179,7 @@ class Layout extends Component{
                 <div className="py-4 sm:mx-auto sm:w-full sm:max-w-md">
                     <img
                         className="mx-auto h-20 w-auto"
-                        src={ Logo }
+                        src={ Logo2 }
                         alt="logo_viajespalacio"
                     />
                 </div>
