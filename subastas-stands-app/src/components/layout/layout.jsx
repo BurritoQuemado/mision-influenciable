@@ -42,7 +42,7 @@ class Layout extends Component{
                 <div className="flex flex-1 items-center">
                   <div className="flex w-full items-center align-middle justify-between md:w-auto">
                     <Link to="/">
-                      <span className="sr-only">Wallet Cryptocoins</span>
+                      <span className="sr-only">Mision Influencible</span>
                       <img
                         className="h-10 w-auto lg:h-32"
                         src={Logo}
