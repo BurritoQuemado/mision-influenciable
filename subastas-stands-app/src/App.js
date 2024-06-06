@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { 
+  Agentes,
+  AgentePage,
   Home,
   LoginPage,
 } from './pages'
@@ -36,8 +38,10 @@ function App () {
   return (
     <Layout logged_in={logged} logout={logout}>
       <Routes>
-        <Route path="/" element={ <Home logged_in={logged} user_id={user_id} /> } />
+        <Route path="/" element={ <Home /> } />
+        <Route path="/agentes" element={ <Agentes /> } />
         <Route path='/login' element={ <LoginPage setLoggedIn={setLoggedIn} /> } />
+        <Route path='/agente/:username' element={ <AgentePage /> } />
       </Routes>
     </Layout>
   );

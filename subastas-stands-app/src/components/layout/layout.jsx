@@ -14,13 +14,17 @@ const navigation = [
       name: 'Inicio', 
       href: '/'
     },
+    { 
+      name: 'Nuestros Agentes', 
+      href: '/agentes'
+    },
 ]
 
 const footerNavigation = {
 
   legal: [
     { name: 'Aviso de Privacidad', 
-      href: 'https://www.viajespalacio.com.mx/aviso-de-privacidad.html' 
+      href: '/privacidad' 
     },
   ],
 }
@@ -34,7 +38,7 @@ class Layout extends Component{
       <div className="bg-white">
         <div className="relative overflow-hidden">
           <Popover as="header" className="relative">
-            <div className="bg-principal pt-4 pb-0">
+            <div className="bg-white pt-4 pb-0">
               <nav
                 className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
                 aria-label="Global"
@@ -77,18 +81,8 @@ class Layout extends Component{
                       >
                      Salir
                    </Link>
-                  : <>
-                    <Link to="/registro" className="text-base font-medium text-black">
-                      Registrarse
-                    </Link>
-                    <Link
-                      to="/login"
-                      className="inline-flex items-center rounded-md border border-transparent bg-principal px-4 py-2 text-base font-medium text-black"
-                    >
-                      Ingresar
-                    </Link>
-                  </>}
-                  
+                  : null
+                  }
                 </div>
               </nav>
               <hr className='mt-4 bg-principal w-full h-2 lg:h-4' />
@@ -142,25 +136,9 @@ class Layout extends Component{
                       >
                         Salir
                       </Link>
-                    </div> : 
-                    <>
-                    <div className="mt-6 px-5">
-                      <Link
-                        to="/registro"
-                        className="block w-full rounded-md bg-principal py-3 px-4 text-center font-medium text-black shadow hover:from-teal-600 hover:to-cyan-700"
-                      >
-                        Registrarse
-                      </Link>
-                    </div>
-                    <div className="mt-6 px-5">
-                      <p className="text-center text-base font-medium text-gray-500">
-                        Ya tengo una cuenta.{' '}
-                        <Link to="/login" className="text-contraste hover:underline">
-                          Ingresar
-                        </Link>
-                      </p>
-                    </div>
-                    </> }
+                    </div> 
+                      : null 
+                    }
                     
                   </div>
                 </div>
