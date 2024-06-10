@@ -62,11 +62,11 @@ const people = [
 
 function Agentes(){
     return (
-        <div className="bg-white py-10">
+        <div className="bg-black py-10">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nuestros Agentes</h2>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <h2 className="text-3xl font-bold tracking-tight text-principal sm:text-4xl">Nuestros Agentes</h2>
+                <p className="mt-6 text-lg leading-8 text-principal/75">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 </div>
@@ -74,14 +74,13 @@ function Agentes(){
                 className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4"
                 >
                 {people.map((person) => (
-                    <li key={person.name} className="">
+                    <li key={person.name} className="border border-principal rounded-xl p-4">
                         <img className="w-full rounded-2xl object-cover" src={person.imageUrl} alt={person.name} />
-                        <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
-                        <p className="text-base leading-7 text-gray-600">@{person.username}</p>
-                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                        <h3 className="mt-6 text-lg font-semibold leading-8 text-center tracking-tight text-principal">{person.name}</h3>
+                        <div className="mt-6 flex items-center justify-center gap-x-6">
                             <a
                             href={`/agente/${person.username}`}
-                            className="rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                            className="rounded-md bg-gray-900/95 px-3.5 py-2.5 text-sm font-semibold text-principal/80 shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                             >
                                 Archivo del agente <ArrowRightIcon className="inline h-6 w-6"/>
                             </a>

@@ -80,11 +80,11 @@ function Agente(){
     const agent = people.find(person => person.username === username);
 
     return (
-        <div className="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
-            <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
+        <div className="bg-black pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
+            <div className="bg-black pb-20 sm:pb-24 xl:pb-0">
                 <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
                     <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-                        <div className="relative h-full aspect-[2/1] md:aspect-[2/3] md:-mx-8 xl:mx-0 xl:aspect-auto">
+                        <div className="relative h-full aspect-[1/1] md:aspect-[2/3] md:-mx-8 xl:mx-0 xl:aspect-auto">
                         <img
                             className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                             src={agent.imageUrl}
@@ -93,48 +93,25 @@ function Agente(){
                         </div>
                     </div>
                     <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
-                        <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
+                        <blockquote className="text-xl font-semibold leading-8 text-principal/80 sm:text-2xl sm:leading-9">
                             <p>
                                 {agent.description}
                             </p>
                         </blockquote>
                         <figcaption className="mt-8 text-base">
-                            <div className="font-semibold text-white">
+                            <div className="font-semibold text-principal">
                                 {agent.name}
                             </div>
-                            <div className="mt-1 text-gray-400">
+                            <div className="mt-1 text-principal/70">
                                 @{agent.username}
                             </div>
                             <div className="mt-10 flex justify-left space-x-10">
                             {agent.socials.map((item) => (
-                                <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                                <a key={item.name} href={item.href} className="text-principal hover:text-principal/50">
                                 <span className="sr-only">{item.name}</span>
                                 <item.icon className="h-10 w-10" aria-hidden="true" />
                                 </a>
                             ))}
-                            </div>
-                            <div>
-                                <form className="w-full max-w-md lg:col-span-5 lg:pt-20 flex">
-                                    <div className="flex gap-x-4">
-                                        <label htmlFor="email-address" className="sr-only">
-                                        Email address
-                                        </label>
-                                        <input
-                                        id="access-code"
-                                        name="accesscode"
-                                        type="password"
-                                        required
-                                        className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                                        placeholder="Clave de acceso"
-                                        />
-                                        <button
-                                        type="submit"
-                                        className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                                        >
-                                            Enviar
-                                        </button>
-                                    </div>
-                                </form>
                             </div>
                         </figcaption>
                     </div>
