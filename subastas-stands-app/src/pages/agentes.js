@@ -64,16 +64,16 @@ function Agentes(){
     return (
         <div className="bg-black py-10">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
-                <h2 className="text-3xl font-bold tracking-tight text-principal sm:text-4xl">
-                    Nuestros Agentes: Los Influencers Seleccionados
-                </h2>
-                <p className="mt-6 text-lg leading-8 text-white">
-                    Hemos seleccionado cuidadosamente a nuestros agentes: influencers destacados que poseen las características esenciales para enfrentar esta competencia. Estos influencers no solo tienen un gran alcance y presencia en redes sociales, sino que también destacan por su creatividad, capacidad de resolver problemas y habilidades de comunicación. Con la ayuda de sus seguidores, estos agentes se embarcarán en una serie de retos diseñados para poner a prueba su ingenio y adaptabilidad.
-                </p>
-                <p className="mt-6 text-lg leading-8 text-white">
-                    Estos agentes han demostrado en múltiples ocasiones que tienen lo necesario para destacar en el mundo digital. Ahora, pondrán a prueba sus habilidades en un entorno competitivo y desafiante, donde solo los mejores avanzarán y serán reconocidos como los verdaderos influenciadores.
-                </p>
+                <div className="mx-auto lg:mx-0">
+                    <h2 className="text-3xl font-bold tracking-tight text-principal sm:text-4xl">
+                        Nuestros Agentes: Los Influencers Seleccionados
+                    </h2>
+                    <p className="mt-6 text-lg leading-8 text-white">
+                        Hemos seleccionado cuidadosamente a nuestros agentes: influencers destacados que poseen las características esenciales para enfrentar esta competencia. Estos influencers no solo tienen un gran alcance y presencia en redes sociales, sino que también destacan por su creatividad, capacidad de resolver problemas y habilidades de comunicación. Con la ayuda de sus seguidores, estos agentes se embarcarán en una serie de retos diseñados para poner a prueba su ingenio y adaptabilidad.
+                    </p>
+                    <p className="mt-6 text-lg leading-8 text-white">
+                        Estos agentes han demostrado en múltiples ocasiones que tienen lo necesario para destacar en el mundo digital. Ahora, pondrán a prueba sus habilidades en un entorno competitivo y desafiante, donde solo los mejores avanzarán y serán reconocidos como los verdaderos influenciadores.
+                    </p>
                 </div>
                 <ul
                 className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4"
