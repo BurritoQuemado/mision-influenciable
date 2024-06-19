@@ -1,6 +1,6 @@
 import React from "react";
 import AgentesBtn from "../assets/images/boton-conoce.webp"
-import Robot from "../assets/images/robot-solo.webp"
+import Robot from "../assets/images/robot.gif"
 
 function Home() {
     
