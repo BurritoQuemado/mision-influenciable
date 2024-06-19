@@ -1,40 +1,32 @@
 import React from "react";
-import { ArrowRightIcon } from "@heroicons/react/20/solid";
+import AgentesBtn from "../assets/images/boton-conoce.webp"
 
 function Home() {
     
     return (
-        <div className="bg-black">
-          <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="bg-transparent">
+          <div className="mx-auto max-w-7xl py-24 lg:py-10 sm:px-6 sm:py-32 lg:px-8">
             <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
               <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-principal sm:text-4xl">
                 Misión Influencible
               </h2>
-              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-principal">
-                
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p className="mx-auto mt-6 max-w-xl text-lg text-left leading-8 text-white">
+                Misión Influencible es una competencia diseñada por una inteligencia artificial para poner a prueba la creatividad, la capacidad de resolución de problemas y las habilidades de comunicación de los influencers más destacados, y saber qué tan preparados están para influir en sus seguidores.
+              </p>
+              <p className="mx-auto mt-6 max-w-xl text-lg text-left leading-8 text-white">
+                Reconoceremos al influencer más completo, capaz de trabajar en equipo, resolver problemas bajo presión y crear contenido atractivo y original. A lo largo de algunos retos, los selectos participantes demostrarán su capacidad para influir y ser influenciados, llevando sus habilidades al límite.
+              </p>
+              <p className="mx-auto mt-6 max-w-xl text-lg text-left leading-8 text-white">
+                Desde la creación de contenido hasta la resolución de enigmas y la coordinación en equipo, Cada etapa tiene con un enfoque específico para evaluar diferentes habilidades.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="/agentes"
-                  className="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-principal/95 shadow-sm hover:bg-gray-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  className="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-principal/95 shadow-sm hover:bg-gray-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
-                  Conoce a los agentes <ArrowRightIcon className="inline h-6 w-6"/>
+                  <img src={AgentesBtn} alt="ver agentes" className="h-20 w-auto"  />
                 </a>
               </div>
-              <svg
-                viewBox="0 0 1024 1024"
-                className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-                aria-hidden="true"
-              >
-                <circle cx={512} cy={512} r={512} fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fillOpacity="0.9" />
-                <defs>
-                  <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-                    <stop stopColor="#65a890" />
-                    <stop offset={1} stopColor="#a43722" />
-                  </radialGradient>
-                </defs>
-              </svg>
             </div>
           </div>
       </div>
