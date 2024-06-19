@@ -1,5 +1,6 @@
 import React from "react";
 import AgentesBtn from "../assets/images/boton-conoce.webp"
+import Robot from "../assets/images/robot-solo.webp"
 
 function Home() {
     
@@ -19,6 +20,9 @@ function Home() {
               <p className="mx-auto mt-6 max-w-xl text-lg text-left leading-8 text-white">
                 Desde la creación de contenido hasta la resolución de enigmas y la coordinación en equipo, Cada etapa tiene con un enfoque específico para evaluar diferentes habilidades.
               </p>
+              <div className="flex items-center justify-center py-8">
+                    <img src={Robot} alt="Robot" className="w-auto h-56 lg:h-80" />
+                </div>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="/agentes"
