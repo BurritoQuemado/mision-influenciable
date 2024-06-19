@@ -8,10 +8,15 @@ module.exports = {
       colors: {
         teal: colors.teal,
         cyan: colors.cyan,
-        principal: '#3AB549',
+        principal: '#35FBFD',
         contraste: '#65a890',
         resalto: '#a43722'
       },
+      backgroundImage: {
+        'main': "url('./assets/images/background.webp')",
+        'conoce': "url('./assets/images/boton-conoce.webp')",
+        'archivo': "url('./assets/images/boton-archivo.webp')",
+      }
     },
   },
   plugins: [
