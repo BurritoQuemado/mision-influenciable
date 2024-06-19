@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { Popover, Transition } from '@headlessui/react'
 import Logo from '../../assets/images/logo.webp'
+import LogoGarra from '../../assets/images/logo-garra.webp'
 import {
   Bars3Icon,
   XMarkIcon,
@@ -152,12 +153,17 @@ class Layout extends Component{
               Footer
             </h2>
             <div className="mx-auto max-w-md px-4 sm:max-w-7xl sm:px-6 lg:px-8 lg:pt-10">
-              <div className="xl:grid xl:grid-cols-3 xl:gap-8 justify-center">
-                <div className="py-4 sm:mx-auto sm:w-full sm:max-w-md">
+            <div className="xl:flex xl:flex-row items-center justify-evenly">
+                <div className="py-4 flex flex-col  md:flex-row items-center justify-evenly gap-4 sm:mx-auto sm:w-full sm:max-w-md">
                     <img
                         className="mx-auto h-32 w-auto"
                         src={ Logo }
-                        alt="logo mision inflencible"
+                        alt="mision influencible"
+                    />
+                    <img
+                        className="mx-auto h-56 w-auto"
+                        src={ LogoGarra }
+                        alt="mision influencible"
                     />
                 </div>
                 <div className="mt-0 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
